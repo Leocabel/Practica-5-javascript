@@ -30,7 +30,7 @@ console.log(pi)
 let numero1 = 7
 let numero2 = 9
 let resultado = numero1 + numero2
-console.log("resultado:", resultado)
+console.log("resultado:", resultado, "algo")
 
 
 
