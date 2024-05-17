@@ -127,7 +127,57 @@ console.log(ListaAnimales[i])
 //canal: "";
 //visualizaciones: 0
 
+let numero = 1
+if (numero = 10) {
 
+    console.log("numero =10")
+}  else if (numero === 11) {
+    console.log("numero es 11")
+  }  else if (numero===12) {
+    console.log("numero===12")
+}  else {
+    console.log("no es ni 10 ni 11 ni 12")
+}
+let numero3 = 5
+if (numero3 > 0 && numero <  10) {
+    console.log ("nuestro numero esta entre el 0 y el 10")
+}
+else {
+    console.log("nuestro numero no esta entre el 0 y el 10")
+}
+
+//---bucles----while----
+
+//let contador = 0
+//while (contador < 5) {
+  // console.log("ciclo:" , contador)
+ // contador = contador + 1
+// contador++
+
+//-------------------funciones---------------
+//estructuras reciben parametros, procesarlos y devuelven parametros
+//ademas de encapsular codigo
+
+//caracteristicas
+// 1. agrupar codigo relacionado a un cierto fin
+// 2. la funcion es reutilizable
+
+//declaracion de la funcion
+function sumar (valor1, valor2) {
+    console.log("parametro1:", valor1)
+    console.log("parametro2", valor2)
+
+console.log("esta funcion esta sumando")
+let resultado = valor1 + valor2
+console.log("mostrar el resultado:", resultado)
+
+return resultado
+}
+
+// ejecucion o llamar una funcion
+let resultadoSuma = sumar(5, 10)
+//sumar(20, 40)
+console.log("resultado de la suma1", resultadoSuma)
 
 
 
