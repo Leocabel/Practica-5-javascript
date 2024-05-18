@@ -191,7 +191,7 @@ console.log("resultado de la suma2", sumar(100, 8))
 console.log("resultado de la suma2", sumar(20, 1))
 console.log("resultado de la suma2", sumar(5, 2))
 
-console.log("Hola Mundo")
+
 
 
 

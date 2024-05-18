@@ -1,4 +1,5 @@
 const mostrarValor = () => {
+    // getElementById = obtener Elemento por el ID
     const input1 = document.getElementById("valor1")
     
     let valor1 = input1.value 
@@ -18,37 +19,64 @@ const mostrarValor = () => {
 // devolver estos valores
 const LeerInputs = () => { 
     console.log("leyendo inputs...")  
-    const inputNumero1 = document.getElementById("input-numero-1")
-    const inputNumero2 = document.getElementById("input-numero-2")
+    let inputNumero1 = document.getElementById("input-numero-1")
+    let inputNumero2 = document.getElementById("input-numero-2")
 }
+
+// obterner los valores de los inputs
 let Numero1 = inputNumero1.value
 let numero2 = inputNumero2.value
-console.log(numero1, numero2)
+console.log("valores desde el input", numero1, numero2)
 
+//validar que no esten vacios
 
-//realizar operacion deber recibir el tipo de operacion
-//realizar la operacion con los dos valores de los inputs
-//y devolver el resultado 
+if (numero1 === "") {
+    // anunciar un error
 
-if (numero1===""){}
-alert("el valor 1 no debe estar vacio")
-const realizarOperacion = (Operacion) => {
-    console.log(operacion) 
+alert("el valor 1 no existe o contiene caracteres no numericos")
+  // interrumpir la ejecucion 
+  return null
+}
 
-    }
-if(numero2 ==="") {
-
-    alert("el valor 2 no debe estar vacio")
+    
+if (numero2 ==="") {
+    //anunciar un error
+    alert("el valor 2 no existe o contiene caracteres no numericos")
+    //interrumpir la ejecucion
     return null
 }
 
+  // parse - cambiar el tipo de dato
+  numero1 = parseInt(numero1)
+  numero2 = parseInt(numero2)
+  console.log(numero1, numero2)
+
+  const numerosValidados = {
+      numero1: numero1,
+      numero2: numero2
+  }
+
+  return numerosValidados
+
+  // esta es otra forma de devolver un JSON
+  // return {
+  //     numero1: numero1,
+  //     numero2: numero2
+  // }
 
 
-//mostrar resultado debe recibir el resultado
-//de la operacion con los dos valores
-//de los inputs y devolver resultado
-
-const mostrarResultado = () => {
-
-
+// realizarOperacion debe recibir el tipo de
+// operacion, realizar la operacion con los dos
+// valores de los inputs y devolver un resultado
+const realizarOperacion = (operacion) => {
+  const numeros = leerInputs()
+  console.log(operacion, "con los numeros:", numeros.numero1, "y", numeros.numero2)
+  
 }
+// mostrarResultado debe recibir el resultado
+// de la operacion y mostrarlo al usuario,
+// ademas debe modificar el simbolo de operacion
+// que se realizo
+const mostrarResultado = () => {
+}
+
