@@ -162,7 +162,7 @@ else {
 // 1. agrupar codigo relacionado a un cierto fin
 // 2. la funcion es reutilizable
 
-//declaracion de la funcion
+//declaracion de la funcion java script antigua
 function sumar (valor1, valor2) {
     console.log("parametro1:", valor1)
     console.log("parametro2", valor2)
@@ -174,10 +174,24 @@ console.log("mostrar el resultado:", resultado)
 return resultado
 }
 
-// ejecucion o llamar una funcion
+// declaracion de la funcion con ECMAScript
+// funcion flecha
+const sumar = (valor1, valor2) => {
+let resultado = valor1 + valor2
+return resultado
+
+}
+
+// ejecucion o llamar una funcion // llamamdo de la funcion
 let resultadoSuma = sumar(5, 10)
-//sumar(20, 40)
 console.log("resultado de la suma1", resultadoSuma)
+
+console.log("resultado de la suma2", sumar(50, 15))
+console.log("resultado de la suma2", sumar(100, 8))
+console.log("resultado de la suma2", sumar(20, 1))
+console.log("resultado de la suma2", sumar(5, 2))
+
+console.log("Hola Mundo")
 
 
 
